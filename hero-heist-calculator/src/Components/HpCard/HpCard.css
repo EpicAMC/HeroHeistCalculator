@@ -1,0 +1,20 @@
+.hp-card {
+    padding: 0.5rem; /* Reduce padding for the card */
+    margin: 0.25rem 0; /* Reduce vertical margin between cards */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: #f9f9f9; /* Optional: Background color */
+    flex: 1; /* Allow the card to grow and fill available space */
+    display: flex; /* Enable flexbox for the card */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute space between content */
+    min-height: 0; /* Allow the card to shrink if necessary */
+    user-select: none; /* Prevent text selection */
+}
+
+.hp-card h2 {
+    margin: 0; /* Remove margin from h2 */
+    padding: 0; /* Remove padding from h2 */
+    font-size: 1.5rem; /* Adjust font size if needed */
+    /* You can add other styles here if necessary */
+}

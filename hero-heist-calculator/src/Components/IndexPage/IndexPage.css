@@ -1,0 +1,90 @@
+body {
+    background-color: lightgrey; /* Set background color of the document to light grey */
+}
+
+.index-page {
+    width: 90%; /* Set width to 90% */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    margin: 0 auto; /* Center the div horizontally */
+    background-color: white; /* Set background color of the index-page div to white */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.title {
+    text-align: center; /* Center the text horizontally */
+}
+
+.turn {
+    text-align: center; /* Center the text horizontally */
+}
+
+.calculator-area {
+    margin: 2.5vh auto; /* Set top margin to 2.5vh and left/right margins to 5% */
+    height: 60vh; /* Adjust height to fill remaining space, accounting for margins */
+    width: 1000px; /* Set minimum width to 900 pixels */
+    border: 1px solid black; /* Outline the calculator area in black */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: row; /* Arrange children in a row */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: stretch; /* Make items stretch to fill the height */
+    /* ... existing styles ... */
+}
+
+.calculator-area > div {
+    flex: 1; /* Allow each child div to grow and fill the available space */
+    margin: 0 0.5rem; /* Optional: Add some margin between child elements */
+}
+
+.calculator-area > .hp-area,
+.calculator-area > .status-area {
+    flex: 1; /* Allow hp-area and status-area to grow */
+    min-width: 0; /* Prevent overflow */
+}
+
+.calculator-area > .team1-area,
+.calculator-area > .team2-area {
+    flex: 2; /* Allow team areas to grow twice as much */
+    min-width: 0; /* Prevent overflow */
+}
+
+.team1-area,
+.team2-area,
+.hp-area,
+.status-area {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack HeroCards vertically */
+    flex: 1; /* Allow the area to grow and fill available space */
+    padding: 1rem; /* Add padding for spacing */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.end-turn-button {
+    display: block; /* Make the button a block element */
+    margin: 1rem auto; /* Center the button with auto margins */
+    padding: 1rem 2rem; /* Increase padding for a larger button */
+    font-size: 1.2rem; /* Increase font size for better visibility */
+    /* ... existing styles ... */
+}
+
+.dropdown-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dropdown-group {
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.dropdown-group:last-child {
+    margin-right: 0;
+}
+
+.dropdown-group select {
+    margin: 0;
+}
+
